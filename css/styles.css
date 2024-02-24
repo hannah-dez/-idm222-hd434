@@ -6,25 +6,77 @@
   --title-text:#607542;
   --main-text:#281914;
   --background:#FAF9F6;
-  --main-text-font:url('Inder-Regular.ttf');
 }
 
+@font-face {
+  font-family: bodyFont;
+  src: url(Inder-Regular.ttf);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(InknutAntiqua-Regular.ttf);
+}
+
+
 p{
-  font-size: 2.5vh;
-  font-family: var(--main-text-font);
+  font-size: 2.2vh;
+  font-family: bodyFont;
+  width: 80vw;
+  display: flex;
+  margin:auto;
+  line-height: 1.45;
+}
+
+p+p{
+  margin-top:15px;
 }
 
 h1{
   font-size:5.5vh;
+  margin:25px, auto;
+  align-items: center;
+  display: flex;
+  font-family: titleFont;
+  color: var(--title-text);
+  background-color: var(--light-yellow);
+}
+
+.about-link{
+  color: var(--title-text);
+  text-decoration: none;
+  margin: auto;
 }
 
 h2{
   font-size: 3.5vh;
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  font-family: bodyFont;
+  color: var(--main-text);
+}
+
+.seperator{
+  margin: 15px;
+  height: 55px;
 }
 
 h3{
-  font-size: 3vh;
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-left:9vw;
+  font-family: titleFont;
+  color: var(--title-text);
+}
+
+.img-seperator{
+  height:15px;
+  background-color: var(--light-green);
+  width:75vw;
+  margin: auto;
+  border-radius: 25px;
 }
 
 /*NAV*/
@@ -130,6 +182,7 @@ h3{
 @media only screen and (max-width: 64em) and (min-width: 52.01em) {
   #menu li {
     width: 33.333%;
+    background-color: #FED21F;
   }
 
   #menu .sub-menu li {
