@@ -6,10 +6,12 @@
   --title-text:#607542;
   --main-text:#281914;
   --background:#FAF9F6;
+  --main-text-font:url('Inder-Regular.ttf');
 }
 
 p{
   font-size: 2.5vh;
+  font-family: var(--main-text-font);
 }
 
 h1{
