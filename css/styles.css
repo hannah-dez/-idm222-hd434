@@ -20,11 +20,13 @@
 
 
 p{
-  font-size: 2.2vh;
+  font-size: 1.8vh;
   font-family: bodyFont;
   width: 80vw;
   display: flex;
   margin:auto;
+  margin-bottom:10px;
+  margin-top:10px;
   line-height: 1.45;
 }
 
@@ -33,8 +35,9 @@ p+p{
 }
 
 h1{
-  font-size:5.5vh;
-  margin:0, auto;
+  font-size:4vh;
+  margin:auto;
+  padding:10px;
   align-items: center;
   display: flex;
   font-family: titleFont;
@@ -54,8 +57,8 @@ h2{
   display: flex;
   justify-content: center;
   font-family: bodyFont;
-  color: var(--main-text);
-  margin: auto;
+  color: var(--title-text);
+  margin: 0px, auto, 15px;
 }
 
 .seperator{
@@ -89,6 +92,8 @@ h3{
 #menu ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 #menu .main-menu {
@@ -165,8 +170,8 @@ h3{
 #toggle-menu .drop-icon, 
 #menu li label.drop-icon {
   position: absolute;
-  right: 1.5em;
-  top: 1.25em;
+  right: 0.2em;
+  top: 1.1em;
 }
 
 #menu label.drop-icon, #toggle-menu span.drop-icon {
@@ -194,7 +199,7 @@ h3{
   }
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 768px) {
   #menu {
     display: flex;
     justify-content: center;
@@ -256,4 +261,83 @@ h3{
   #menu li:hover > input[type="checkbox"] + .sub-menu {
     display: block;
   }
+}
+
+/*ABOUT PAGE*/
+.abtheader{
+  width:80vw;
+  margin: auto;
+  display: flex;
+  align-items:flex-end;
+  padding: 15px;
+  background-color: #C8DAA6;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 480px) {
+   .abtheader{
+      content: url('../Content/medium/About_header.png'); /* Change the image source */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .abtheader{
+    content: url('../Content/large/About_Header.png');
+  }
+}
+   
+    /*Abt Carousel*/
+.container-about{
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  margin-bottom: 25px;;
+  border:2px solid #281914;
+}
+
+.carousel-about{
+  width: 80vw;
+  height:70vh;
+  border-radius:25px;
+  position: relative;
+}
+
+.slider-about{
+  width: 80vw;
+  height: 70vh;
+}
+
+.slider-about section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 0;
+  transition: all 1s ease-in;
+}
+.abt-carousel{
+  border-radius: 25px;
+}
+.slider-about section:nth-child(1){
+  opacity: 1;
+  z-index: 1;
+}
+
+.next{
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  z-index: 2;
+}
+
+.prev{
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  z-index: 2;
 }
