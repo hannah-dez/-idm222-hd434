@@ -18,9 +18,14 @@
   src: url(InknutAntiqua-Regular.ttf);
 }
 
+header{
+  width: 100vw;
+  margin: 0px;
+  background-color: var(--light-yellow);
+}
 
 p{
-  font-size: 1.8vh;
+  font-size: 2vh;
   font-family: bodyFont;
   width: 80vw;
   display: flex;
@@ -36,7 +41,7 @@ p+p{
 
 h1{
   font-size:4vh;
-  margin:auto;
+  margin:0px;
   padding:10px;
   align-items: center;
   display: flex;
@@ -48,7 +53,7 @@ h1{
 .about-link{
   color: var(--title-text);
   text-decoration: none;
-  margin: auto;
+  margin: 0 auto;
 }
 
 h2{
@@ -274,6 +279,8 @@ h3{
   border-radius: 25px;
 }
 
+
+
 @media only screen and (min-width: 480px) {
    .abtheader{
       content: url('../Content/medium/About_header.png'); /* Change the image source */
@@ -289,41 +296,39 @@ h3{
     /*Abt Carousel*/
 .container-about{
   width: 80vw;
-  height: 70vh;
+  height: 40vh;
   margin: auto;
   margin-bottom: 25px;;
-  border:2px solid #281914;
 }
 
 .carousel-about{
   width: 80vw;
-  height:70vh;
+  height:40vh;
   border-radius:25px;
   position: relative;
 }
 
 .slider-about{
   width: 80vw;
-  height: 70vh;
+  height: 40vh;
 }
 
-.slider-about section{
+.slider-about img{
   position: absolute;
   top: 0;
   left: 0;
   width: 80vw;
-  height: 70vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   z-index: 0;
-  transition: all 1s ease-in;
 }
 .abt-carousel{
   border-radius: 25px;
 }
-.slider-about section:nth-child(1){
+.slider-about img:nth-child(1){
   opacity: 1;
   z-index: 1;
 }
@@ -331,13 +336,88 @@ h3{
 .next{
   position: absolute;
   top: 50%;
-  right: 50px;
+  right: 10px;
   z-index: 2;
+  padding:  10px 15px;
+  border-radius: 25px;
 }
 
 .prev{
   position: absolute;
   top: 50%;
-  left: 50px;
+  left: 10px;
   z-index: 2;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .abtheader{
+    content: url(../Content/large/About_Header.jpg);
+  }
+
+.friends1{
+  content: url(../Content/large/About_Friends_1.jpg);
+}
+
+.friends2{
+  content: url(../Content/large/About_Friends_2.jpg);
+}
+
+.abt-square1{
+  content: url(../Content/large/About_Square_1.jpg);
+}
+
+.abt-square2{
+  content: url(../Content/large/About_Square_2.jpg);
+}
+
+.abt-square3{
+  content: url(../Content/large/About_Square_3.jpg);
+}
+
+  .container-about{
+    width: 80vw;
+    height: 90vh;
+  }
+  
+  .carousel-about{
+    width: 80vw;
+    height:90vh;
+  }
+  
+  .slider-about{
+    width: 80vw;
+    height: 90vh;
+  }
+  
+  .slider-about img{
+    width: 80vw;
+    height: 90vh;
+  }
+  .next{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 2;
+  }
+  
+  .prev{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+  }
+  
+  .abt1{
+    content: url('../Content/large/About_Carousel_1.jpg')
+  }
+
+  .abt2{
+    content: url('../Content/large/About_Carousel_2.jpg');
+  }
+
+  .abt3{
+    content: url('../Content/large/About_Carousel_3.jpg');
+  }
 }
