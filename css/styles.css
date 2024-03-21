@@ -57,7 +57,7 @@ p+p{
 h1{
   font-size:4vh;
   margin:0px;
-  padding:10px, 0;
+  padding: 10px 0;
   align-items: center;
   display: flex;
   font-family: titleFont;
@@ -79,7 +79,7 @@ h2{
   justify-content: center;
   font-family: bodyFont;
   color: var(--title-text);
-  margin: 30px, auto;
+  margin: 30px auto;
   padding: 15px 0;
   background-color: var(--background);
 }
@@ -290,7 +290,7 @@ footer ul li {
   /*ABOUT*/
   .smallsquare{
     width: 80%;
-    margin: 25px, 0, 34px;
+    margin: 25px 0 34px;
   }
   .abt-square1{
     grid-row: 2 / span 1;
