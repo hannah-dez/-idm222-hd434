@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var dropdowns = document.querySelectorAll('.dropdown');
+    const dropdowns = document.querySelectorAll('.dropdown');
   
     dropdowns.forEach(function(dropdown) {
       dropdown.addEventListener('click', function() {
