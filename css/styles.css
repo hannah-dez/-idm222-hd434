@@ -103,7 +103,7 @@ h3{
   height:5px;
   background-color: var(--light-green);
   width:75vw;
-  margin: auto;
+  margin:  25px auto 15px;
   border-radius: 25px;
 }
 footer{
@@ -415,6 +415,35 @@ img.catTrack-img{
   width: 80vw;
   margin: 20px auto 15px;
 }
+
+/*FOCUST PAGE*/
+.top-gif{
+  width: 60vw;
+  margin: 15px auto 27px;
+  display: block;
+  border-radius: 25px;
+  filter: drop-shadow(-12px 12px var(--light-green));
+}
+.focust-vid{
+  display: none;
+}
+.focust-tallimg1{
+  width: 30vw;
+}
+.focust-tallimg2{
+  width: 30vw;
+}
+.focust-befraft{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.img-seperator-vert3{
+  display: none;
+}
+.img-seperator-vert4{
+  display: none;
+}
 @media (max-width:392px){
  /*FOOTER*/
   .footer-logo{
@@ -536,12 +565,52 @@ img.catTrack-img{
   .cat5{
     content: url('../Content/medium/CatTrack_Carousel_5.png');
   }
+  
+/*FOCUST*/
+  .focust-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 95px auto;
+    column-gap:8px;
+    margin-left:-5vw;
+  }
+  .top-gif{
+    display: none;
+  }
+  .focust-vid{
+    display: block;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    width: 40vw;
+    justify-self: end;
+    filter: drop-shadow(-12px 12px var(--light-green));
+    border-radius: 25px;
+  }
+  .focust-gidp{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    width: 45vw;
+    justify-self:left;
+    align-self: center;
+  }
+  .focust-btn{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    padding: 15px;
+  }
 }
 
 @media (min-width: 700px){
   .resume-sep{
     width: 80vw;
     margin: 20px auto;
+  }
+  /*FOCUST*/
+  .focust-vid{
+    height: 60vh;
+    background-color: var(--light-green);
+    filter: none;
   }
 }
 
@@ -715,5 +784,33 @@ img.catTrack-img{
   }
   .cat-horizontal{
     width: 75vw;
+  }
+  .catTrack-img{
+    content: url('../Content/large/CatTrack_UserPersona.png');
+  }
+  /*FOCUST*/
+  .focust-gidp{
+    width: 30vw;
+  }
+  .focust-carousel1{
+    content: url('../Content/large/Focust_Carousel_1.png');
+  }
+  .focust-carousel2{
+    content: url('../Content/large/Focust_Carousel_2.png');
+  }
+  .focust-carousel3{
+    content: url('../Content/large/Focust_Carousel_3.png');
+  }
+  .focust-carousel4{
+    content: url('../Content/large/Focust_Carousel_4.png');
+  }
+  .fcst-slider#slider{
+    width: 50vw;
+  }
+  .focust-tallimg1{
+    content: url('../Content/large/Focust_Before.png');
+  }
+  .focust-tallimg2{
+    content: url('../Content/large/Focust_After.png');
   }
 }
