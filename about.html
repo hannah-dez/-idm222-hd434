@@ -9,33 +9,23 @@
 <body>
     <header>
         <h1><a class="about-link" href="index.html">Hannah Online</a></h1>
-        <nav id="menu">
-            <ul id="main-menu clearfix">
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio
-                    <span class="drop-icon">▾</span>
-                    <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
-                </a>
-                <input type="checkbox" id="sm1">
-                <ul class="sub-menu">
-                    <li><a href="photography.html">Photography</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="index.html">Case Studies
-                        <span class="drop-icon">▾</span>
-                        <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
-                    </a>
-                    <input type="checkbox" id="sm2">
-                    <ul class="sub-menu">
-                        <li><a href="focust.html">Focust</a></li>
-                        <li><a href="ultimate-guitar.html">Ultimate Guitar</a></li>
-                        <li><a href="cat-track.html">Cat Track</a></li>
-                    </ul>
-                    </li>
-                </ul>
-                </li>
-                <li><a href="resume.html">Resume</a></li>
-          </ul>
-        </nav>
+        <div id= "menu">
+            <div class="menuitem">
+              <a href="about.html">About</a>
+            </div>
+            <div class="menuitem">
+              <a href="resume.html">Resume</a>
+            </div>
+              <div class="dropdown">
+                <button class="dropbtn">Portfolio</button>
+                <div class="dropdown-content">
+                  <a href="portfolio.html">Portfolio</a>
+                  <a href="design.html" class="sub-menu">&#8618;&#xFE0E; Design</a>
+                  <a href="photography.html" class="sub-menu">&#8618;&#xFE0E; Photography</a>
+                  <a href="index.html" class="sub-menu">&#8618;&#xFE0E; Case Studies</a>
+                </div>
+              </div>
+          </div>
     </header>
     <main>
         <div class="seperator"></div>

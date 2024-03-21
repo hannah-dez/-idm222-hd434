@@ -9,28 +9,23 @@
 <body>
     <header>
         <h1><a class="about-link" href="index.html">Hannah Online</a></h1>
-        <div class="head-nav">
-            <div class="menuToggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio<b>&#9660</b></a>
-                        <ul>
-                            <li><a href="design.html">Design</a></li>
-                            <li><a href="photography.html">Photography</a></li>
-                            <li><a href="index.html">Case Studies <b>&#9658</b></a>
-                                <ul>
-                                    <li><a href="focust.html">Focust</a></li>
-                                    <li><a href="ultimate-guitar.html">Ultimate Guitar</a></li>
-                                    <li><a href="cat-track.html">Cat Track</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <div id= "menu">
+            <div class="menuitem">
+              <a href="about.html">About</a>
+            </div>
+            <div class="menuitem">
+              <a href="resume.html">Resume</a>
+            </div>
+              <div class="dropdown">
+                <button class="dropbtn">Portfolio</button>
+                <div class="dropdown-content">
+                  <a href="portfolio.html">Portfolio</a>
+                  <a href="design.html" class="sub-menu">&#8618;&#xFE0E; Design</a>
+                  <a href="photography.html" class="sub-menu">&#8618;&#xFE0E; Photography</a>
+                  <a href="index.html" class="sub-menu">&#8618;&#xFE0E; Case Studies</a>
+                </div>
+              </div>
+          </div>
     </header>
     <main>
         <div class="box-1">
@@ -46,7 +41,7 @@
             <p>Cat Track</p>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <ul>
             <li>@hannah_dez_</li>
             <li>hannahdesmond913.wordpress.com</li>
