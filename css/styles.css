@@ -261,13 +261,14 @@ footer ul li {
   border-radius: 25px;
 }
 
-@media (max-width:309px){
+@media (max-width:392px){
  /*FOOTER*/
   .footer-logo{
     width: 5vw;
     margin: 0 2px;
     position: relative;
     top: 5px;
+    display: none;
   }
 }
 @media (min-width:560px){
@@ -321,6 +322,11 @@ footer ul li {
     justify-self:center;
     border-radius: 25px;
     margin-top: 15px;
+  }
+  /*RESUME*/
+  div.resume-imgs img{
+    width: 4vw;
+    margin: 5px;
   }
 }
 /*Abt carousel testing*/
@@ -420,3 +426,125 @@ footer ul li {
 }
 
 /*RESUME PAGE*/
+.button{
+  background-color: var(--olive);
+  color: var(--light-yellow);
+  border-radius: 25px;
+  padding: 15px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+resume.html p{
+  font-size: 3vh;
+  line-height: 1.45;
+}
+ul{
+  width: 80vw;
+  font-family: bodyFont, sans-serif;
+  font-size: 2vh;
+  line-height: 1.45;
+  margin: auto;
+  margin-bottom: 15px;
+}
+div.resume-imgs img{
+  width: 9vw;
+  margin: 5px;
+}
+div.resume-imgs{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70vw;
+}
+
+@media (min-width: 700px){
+  .resume-sep{
+    width: 80vw;
+    margin: 20px auto;
+  }
+}
+@media (min-width:1024px){
+  /*RESUME*/
+  .resume-container{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto auto auto auto;
+    height: fit-content;
+    width: 100vw;
+  }
+  div.profile{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  div.profile h3{
+    margin-left: 5vw;
+  }
+  div.profile p{
+    width: 40vw;
+  }
+  div.skills{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  div.skills h3{
+    margin-left: 5vw;
+  }
+  div.skills.div.resume-imgs{
+    width: 40vw;
+  }
+  div.skills ul{
+    margin: auto;
+    width: 40vw;
+  }
+  div.honors{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  div.honors h3{
+    margin-left: 5vw;
+  }
+  div.honors ul{
+    width: 40vw;
+  }
+  div.coursework{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  div.coursework h3{
+    margin-left: 5vw;
+  }
+  div.coursework p{
+    width: 40vw;
+  }
+  div.Experience1{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 4;
+  }
+  div.Experience1 h3{
+    margin-left:5vw;
+  }
+  div.Experience1 p{
+    width: 40vw;
+  }
+  div.Experience1 ul{
+    width: 40vw;
+  }
+  .resume-sep{
+    width: 40vw;
+  }
+  div.resume-imgs img{
+    width: 4vw;
+    margin: 5px;
+  }
+  div.resume-imgs{
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
+  }
+}
