@@ -315,11 +315,13 @@ footer ul li {
   color: var(--light-yellow);
   border-radius: 25px;
   padding: 15px;
-  margin: 10px auto;
+  margin: 10px auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
+  text-decoration: none;
+  font-family: bodyFont, sans-serif;
 }
 resume.html p{
   font-size: 3vh;
@@ -382,7 +384,37 @@ img.home-img {
   display: block;
   text-align: center;
 }
+/*CAT-TRACK Case Study*/
+img.catTrack-img{
+  width: 80vw;
+  margin: 25px auto;
+  display: flex;
+  padding: 15px;
+  background-color: var(--light-yellow);
+  border-radius:25px;
+}
+.catresearch{
+  width: 80vw;
+  display: block;
+  margin: 25px auto;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: var(--light-green);
+}
+.horizontal-content{
+  width: 257px;
+  margin: auto;
+}
 
+.cat-horizontal{
+  overflow: auto;
+  white-space: nowrap;
+  background-color:#C8DAA6;
+  padding:15px;
+  border-radius: 25px;
+  width: 80vw;
+  margin: 20px auto 15px;
+}
 @media (max-width:392px){
  /*FOOTER*/
   .footer-logo{
@@ -474,6 +506,35 @@ img.home-img {
   }
   .catimg{
     content: url('../Content/medium/Home-CatTrack.png');
+  }
+  /*CAT-TRACK Case Study*/
+  .cat-horizontal{
+    width: 80vw;
+  }
+  img.catTrack-img{
+    width: 60vw;
+  }
+  .catTrack-img{
+    content: url('../Content/medium/CatTrack_UserPersona.png');
+  }
+  .catresearch{
+    content: url('../Content/medium/CatTrack1.png');
+    width: 60vw;
+  }
+  .cat1{
+    content: url('../Content/medium/CatTrack_Carousel_1.png');
+  }
+  .cat2{
+    content: url('../Content/medium/CatTrack_Carousel_2.png');
+  }
+  .cat3{
+    content: url('../Content/medium/CatTrack_Carousel_3.png');
+  }
+  .cat4{
+    content: url('../Content/medium/CatTrack_Carousel_4.png');
+  }
+  .cat5{
+    content: url('../Content/medium/CatTrack_Carousel_5.png');
   }
 }
 
@@ -621,5 +682,38 @@ img.home-img {
   }
   .cslink{
     width: 20vw;
+  }
+  /*CATTRACK PAGE*/
+  .cat-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 80vw;
+    margin-left: 7.5vw;
+  }
+  .between-words h3{
+    margin-left: 2.5vw;
+  }
+  div.cat-grid .catTrack-img{
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 40vw;
+    margin: 10px;
+  }
+  div.cat-grid div.between-words{
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  div.cat-grid .catresearch{
+    display: grid;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    width: 40vw;
+    margin: 10px;
+  }
+  .cat-horizontal{
+    width: 75vw;
   }
 }
