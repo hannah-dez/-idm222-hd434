@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/styles.css" rel="stylesheet"> 
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Hannah Online</a></h1>
-        <div class="top-menu">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
+        <h1><a class="about-link" href="index.html">Hannah Online</a></h1>
+        <div class="head-nav">
+            <div class="menuToggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio<b>&#9660</b></a>
+                        <ul>
+                            <li><a href="index.html">Case Studies</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="photography.html">Photography</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -38,5 +47,6 @@
             <li>LinkedIn</li>
         </ul>
     </footer>
+    <link href="/scripts/menu.js">
 </body>
 </html>

@@ -18,6 +18,11 @@
   src: url(InknutAntiqua-Regular.ttf);
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header{
   width: 100vw;
   margin: 0px;
@@ -48,6 +53,7 @@ h1{
   font-family: titleFont;
   color: var(--title-text);
   background-color: var(--light-yellow);
+  width: 100%;
 }
 
 .about-link{
@@ -88,13 +94,63 @@ h3{
   border-radius: 25px;
 }
 
+/*NEW NAV???*/
+.head-nav{
+  position: absolute;
+  min-height: 66px;
+  padding: 0 100px;
+  background-color: var(--dark-yellow);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-nav ul{
+  position: relative;
+}
+
+.head-nav ul li{
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+.head-nav ul li a{
+  color: var(--title-text);
+  font-family: titleFont;
+  font-weight: 400;
+  padding: 20px 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-nav ul li a:hover {
+  background-color: var(--olive);
+  color: var(--light-yellow);
+}
+
+.head-nav ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: var(--dark-yellow);
+  display: none;
+}
+
+.head-nav ul li:hover ul {
+  display: block;
+}
+/*TO FINISH NAV: 7:04 https://www.youtube.com/watch?v=samof05Dy6A
+FOR TRIANGLE INPUTS: https://www.w3schools.com/charsets/ref_utf_geometric.asp*/
 /*NAV
 #menu{
   background-color: var(--dark-yellow);
   margin: auto;
 }*/
 
-#menu ul {
+/*#menu ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -213,9 +269,9 @@ h3{
 
   #main-menu {
     display: flex;
-    justify-content: space-around; /* Distribute menu items evenly */
-    max-width: 800px; /* Adjust max-width as needed */
-    width: 100%; /* Ensure full width */
+    justify-content: space-around; /* Distribute menu items evenly 
+    max-width: 800px; /* Adjust max-width as needed 
+    width: 100%; /* Ensure full width 
   }
   #menu .main-menu {
     display: block;
@@ -266,7 +322,7 @@ h3{
   #menu li:hover > input[type="checkbox"] + .sub-menu {
     display: block;
   }
-}
+} */
 
 /*ABOUT PAGE*/
 .abtheader{
