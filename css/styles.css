@@ -423,6 +423,53 @@ img.catTrack-img{
   width: 80vw;
   margin: 20px auto 15px;
 }
+#fcst-slider{
+  overflow: hidden;
+  width: 85vw;
+  margin: 15px auto 30px;
+  border-radius: 25px;
+  filter: drop-shadow(15px 15px 0 var(--light-green));
+}
+#fcst-slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s fcst-slider infinite;
+}
+#fcst-slider figure img{
+  width: 20%;
+  float: left;
+}
+@keyframes fcst-slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  90%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
 
 /*FOCUST PAGE*/
 .top-gif{
@@ -492,7 +539,53 @@ img.ug-img-head{
   width: 50vw;
   justify-self: center;
 }
-
+#ug-slider{
+  overflow: hidden;
+  width: 85vw;
+  margin: 15px auto 30px;
+  border-radius: 25px;
+  filter: drop-shadow(15px 15px 0 var(--light-green));
+}
+#ug-slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s ug-slider infinite;
+}
+#ug-slider figure img{
+  width: 20%;
+  float: left;
+}
+@keyframes ug-slider {
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  90%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
 /*DESIGN PAGE*/
 .design-intro{
   display: grid;
@@ -1358,7 +1451,7 @@ div.value{
   .focust-carousel4{
     content: url('../Content/large/Focust_Carousel_4.png');
   }
-  .fcst-slider#slider{
+  .fcst-slider#fcst-slider{
     width: 50vw;
   }
   .focust-tallimg1{
@@ -1382,10 +1475,10 @@ div.value{
   .uggridp{
     width: 28vw;
   }
-  #slider.ug-slider{
+  #ug-slider.ug-slider{
     width: 70vw;
   }
-  div#slider img{
+  div#ug-slider img{
     width: 70vw;
     height: 70vh;
   }
