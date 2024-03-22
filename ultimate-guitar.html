@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="styles" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -29,21 +29,30 @@
     </header>
     <main>
         <h2>Ultimate Guitar Redesign</h2>
-            <a href="" class="button">View Figma File</a>
-            <img href="" alt="">
-            <p>The final project for my user interaction class was to redesign a few pages of a website of our choice. I chose the website Ultimate Guitar which is an online database of millions of guitar tablatures and chords. You can access this site at https://www.ultimate-guitar.com/. I decided to pinpoint the average user as a casual guitar player that uses this site to play and sing their favorite songs. Then I looked into how the original site was laid out.</p>
+        <div class="ug-grid">
+            <a class="button ug-figma-btn" href="https://www.figma.com/file/x0CkuwaoxnY8cI06FTpYaI/hd434_IDM212_002_Final?type=design&node-id=358%3A4812&mode=design&t=GNwD5I4j354VOou5-1">View Figma File</a>
+            <img class="ug-img-head" src="Content/small/Home-UltimateGuitar.png" alt="An image of an iPhone with the home screen of the Ultimate Guitar redesign. Featuring he main colors of black and dark grey with accents of a golden yellow.">
+            <p class="uggridp">The final project for my user interaction class was to redesign a few pages of a website of our choice. I chose the website Ultimate Guitar which is an online database of millions of guitar tablatures and chords. You can access this site at https://www.ultimate-guitar.com/. I decided to pinpoint the average user as a casual guitar player that uses this site to play and sing their favorite songs. Then I looked into how the original site was laid out.</p>
+        </div>
+        <div class="ug-img-seperator"></div>
             <h3>Critique</h3>
-                <div class="ug-fade">
-                    <img href="" alt="">
-                    <img href="" alt="">
-                    <img href="" alt="">
+                <div id="slider" class="ug-slider">
+                    <figure>
+                        <img class="ugbad1" src="Content/small/UG_itsbad1.png" alt="Image of the original Ultimate Guitar site with scattered blocks of information and large empty spaces.">
+                        <img class="ugbad2" src="Content/small/ug_itsbad2.png" alt="Image of the original Ultimate Guitar site's search section with a list of golden links and useless empty space.">
+                        <img class="ugbad1" src="Content/small/UG_itsbad1.png" alt="Image of the original Ultimate Guitar site with scattered blocks of information and large empty spaces.">
+                        <img class="ugbad3" src="Content/small/ug_itsbad3.png" alt="Image of the original Ultimat Guitar site with a page of golden links and minimal organization.">
+                        <img class="ugbad1" src="Content/small/UG_itsbad1.png" alt="Image of the original Ultimate Guitar site with scattered blocks of information and large empty spaces.">
+                    </figure>
                 </div>
                 <p>Though there was a clear color scheme and theme, the website was a mess of text and links that were difficult to sort through. There was no easy flow of information throughout the page, which would cause most users to ignore the mass of information and stick to the basic feature they knew would help: the search bar.</p>
                 <p>This made me realize how well placed the search bar was. It is one of the site's most used features and is consistently placed in the top right corner- creating a space of stability and comfort amongst the chaos. Overall, the site needed a better flow and a limit on how much information was displayed on the front page.</p>
             <h3>Improvements</h3>
-                <img href="" alt="The redesigned Ultimate Guitar home page on a laptop.">
-                <img href="" alt="The redesigned Ultimate Guitar home page on a tablet.">
-                <img href="" alt="The redesigned Ultimate Guitar home page on a phone.">
+                <div class="ug-grid2">
+                    <img src="Content/small/ug-mobile.png" class="ug-mobile" alt="The redesigned Ultimate Guitar home page on a laptop.">
+                    <img src="Content/small/ug-tablet.png" class="ug-tablet" alt="The redesigned Ultimate Guitar home page on a tablet.">
+                    <img src="Content/small/ug-desktop.png" class="ugdesktop" alt="The redesigned Ultimate Guitar home page on a phone.">
+                </div>
                 <p>With Figma, I created a prototype of five of the sites pages. First, I severely decreased the amount of information present on the homepage. I wanted to keep the dark design features of the original site since the existing color scheme was an iconic look that was associated with the site. Then I went into the filter system on the site and created a more interactive and visual representation of the songs that would appear based on a search. </p>
                 <p>I did this with graphics, switching up the background, and small dynamic interactions. I also adjusted the typography to reflect playfulness but also to add a sense of organization and hierarchy throughout the page. My goal was to achieve a sleek and logical design, that still matched the color scheme and brand of the original site.</p>
             <h3>Reflection</h3>
@@ -56,5 +65,6 @@
             <li>LinkedIn</li>
         </ul>
     </footer>
+    <script src="./scripts/about.js"></script>
 </body>
 </html>
